@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajar Karym - Développeuse Full Stack</title>
+    <meta name="description" content="Portfolio de Hajar Karym, développeuse Full Stack passionnée par React, Laravel et les technologies modernes">
+    <meta name="keywords" content="développeuse, full stack, react, laravel, javascript, php, web, casablanca, maroc">
+    <meta name="author" content="Hajar Karym">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">&lt;HK/&gt;</a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#parcours" class="nav-link">Parcours</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="language-toggle" id="language-toggle">
+                    <span>FR</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="floating-particles"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Je suis</span>
+                        <span class="name" id="typewriter">Hajar Karym</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionnée par la création de solutions web complètes, de l'interface utilisateur aux architectures backend robustes.
+                    </p>
+                    <a href="#projects" class="cta-button">
+                        Découvrir mes projets
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="rotating-ring"></div>
+                        <div class="pulsing-ring"></div>
+                        <div class="profile-image">
+                            <img src="assets/images/profile.png" alt="Hajar Karym" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="profile-fallback">
+                                <span>HK</span>
+                            </div>
+                        </div>
+                        <div class="floating-particles-profile"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Défiler vers le bas</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>À propos de <span class="highlight">moi</span></h2>
+                <p>Passionnée par le développement web et les nouvelles technologies</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Développeuse passionnée, je conçois et réalise des solutions digitales modernes alliant performance, design et expérience utilisateur de qualité.</p>
+                    <p>Spécialisée en développement web avec React, Laravel et d’autres technologies récentes, je transforme les idées en applications web efficaces, esthétiques et adaptées aux besoins des utilisateurs..</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">21</span>
+                            <span class="stat-label">Ans</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                    </div>
+                    
+                    <a href="CV professionnel Karym Hajar.pdf" class="download-cv" download>
+                        <i class="fas fa-download"></i>
+                        Télécharger mon CV
+                    </a>
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="" alt="Hajar Karym" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="image-fallback">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Section -->
+    <section id="parcours" class="parcours">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mon <span class="highlight">Parcours</span></h2>
+                <p>Formation et expériences qui ont façonnée mon expertise en développement</p>
+            </div>
+
+            <div class="parcours-toggle">
+                <button class="toggle-btn active" data-target="formation"><i class="fas fa-graduation-cap"></i> Formation</button>
+                <button class="toggle-btn" data-target="experience"><i class="fas fa-briefcase"></i> Expérience</button>
+            </div>
+
+            <div class="parcours-grid">
+                <div class="parcours-column" id="formation">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h3>Technicien spécialisé en Développement Informatique en Double Diplomation</h3>
+                                <div class="meta"><span><i class="far fa-calendar"></i> 2023 - 2025</span><span><i class="fas fa-location-dot"></i> Eurelec Casablanca</span></div>
+                            </div>
+                        </div>
+                        <p>Formation intensive en Développement web Full-Stack. Maîtrise des technologies modernes : HTML, CSS, JavaScript, Laravel, bases de données etc ...</p>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+                            <div>
+                                <h3>Baccalauréat Physique–Chimie</h3>
+                                <div class="meta"><span><i class="far fa-calendar"></i> 2022 - 2023</span><span><i class="fas fa-school"></i> Académie Maurice Bucaille Casablanca</span></div>
+                            </div>
+                        </div>
+                        <p>Diplôme obtenu du Baccalauréat. Formation scientifique solide développant l'esprit logique et analytique.</p>
+                    </div>
+                </div>
+
+                <div class="divider">
+                    <span class="dot"></span>
+                </div>
+
+                <div class="parcours-column" id="experience">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="icon success"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <h3>Stage en développement web</h3>
+                                <div class="meta"><a href="#" class="company">Click Doc</a> <span><i class="far fa-calendar"></i> 2025</span><span><i class="fas fa-location-dot"></i> Casablanca, Maroc</span></div>
+                            </div>
+                        </div>
+                        <p>Développement d'un site web (Click Lab) Travail en équipe sur un projet réels avec des technologies modernes.</p>
+                    </div>
+
+                   
+                <div class="parcours-column" id="experience">
+                    <div class="timeline-card">
+                        <div class="card-header">
+                            <div class="icon success"><i class="fas fa-briefcase"></i></div>
+                            <div>
+                                <h3>Stage en développement web</h3>
+                                <div class="meta"><a href="#" class="company">Dashy</a> <span><i class="far fa-calendar"></i> 2025</span><span><i class="fas fa-location-dot"></i> Casablanca, Maroc</span></div>
+                            </div>
+                        </div>
+                        <p>Développement d'un site web (Dashy) . Travail individuelle sur un projet réels et fonctionelle avec des technologies modernes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes <span class="highlight">Compétences</span></h2>
+                <p>Technologies et outils que je maîtrise pour créer des solutions performantes</p>
+            </div>
+            
+            <div class="skills-filters">
+                <button class="filter-btn active" data-filter="all">Toutes</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="tools">Outils</button>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                        <span>40%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                        <span>75%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                        <span>70%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-category="tools">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                    <div class="skill-level">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes <span class="highlight">Services</span></h2>
+                <p>Des offres claires et professionnelles pour accompagner vos projets</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Développement Frontend</h3>
+                    <p>Interfaces modernes, accessibles et performantes avec React/JS.</p>
+                    <ul class="service-points">
+                        <li>Design system et composants UI</li>
+                        <li>Performance et SEO</li>
+                        <li>Responsive & accessibilité</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
+                    <h3>Back-end & API</h3>
+                    <p>APIs robustes et sécurisées avec Laravel ou Python.</p>
+                    <ul class="service-points">
+                        <li>Conception base de données</li>
+                        <li>Auth & rôles, sécurité</li>
+                        <li>Tests et CI/CD</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Accompagnement projet</h3>
+                    <p>Du prototype au déploiement, avec une approche produit.</p>
+                    <ul class="service-points">
+                        <li>Audit et conseils</li>
+                        <li>Roadmap & suivi</li>
+                        <li>Hébergement & déploiement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mes <span class="highlight">Projets</span></h2>
+                <p>Découvrez une sélection de mes réalisations qui illustrent ma passion pour le développement web</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Projets/RENTCAR.png" alt="Rent Car">
+                    </div>
+                    <div class="project-content">
+                        <h3>Rent Car</h3>
+                        <p class="project-category">Agence digitale de location de véhicules</p>
+                        <p class="project-description">Plateforme digitale de location de voitures simple, rapide et accessible.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Projets/bassim 22.jpg" alt="Bassim">
+                    </div>
+                    <div class="project-content">
+                        <h3>Bassim Tours</h3>
+                        <p class="project-category">Plateforme Touristique</p>
+                        <p class="project-description">Agence spécialisée dans le transport touristique, offrant confort, sécurité et découverte.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Projets/le_MIRAGE.png" alt="le Mirage">
+                    </div>
+                    <div class="project-content">
+                        <h3>Le Mirage</h3>
+                        <p class="project-category">Plateforme de réstauration</p>
+                        <p class="project-description">Plateforme en ligne de réservation et commande de restaurants, simple et rapide.</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                Voir le projet
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez <span class="highlight">moi</span></h2>
+                <p>Vous avez un projet en tête ? Discutons de vos idées et créons quelque chose d'extraordinaire ensemble !</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>karymhajar822@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+212 6 02 45 60 40 </p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Maroc, Casablanca</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envoyez-moi un message</h3>
+                    <form id="contact-form" action="contact.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Sujet" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Envoyer le message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <p>Développeuse Full Stack passionnée, je transforme vos idées en expériences web modernes et performantes. Spécialisée dans les technologies React, Laravel et les nouvelles technologies.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Réseaux sociaux</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/Hajarkarym822" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hajar-karym-b684aa300/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/Hajarkarym3" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hajar Karym. Tous droits réservés.</p>
+               
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="css/js/main.js"></script>
+</body>
+</html>
